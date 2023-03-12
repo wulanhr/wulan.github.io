@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');    
+
+nav ul{
+  justify-content: space-around;
+  list-style: none;
+  height: 50px;
+  border-radius: 5px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em; 
+  font-weight: 800;
+  padding: 10px 20px;
+  background-color: #3CB5B5;
+  border-radius: 50px;
+}
+
+nav ul li a:hover{
+color:rgb(255, 231, 235);
+}
+
+.judul {
+    font-family: 'Righteous', cursive;
+}
+
+
+.btnpertama {
+  background-color: #3CB5B5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+}
+#btn1 {
+  background-color: #CACBC5;
+  border: 5px solid pink;
+  color: white;
+  font-size: 26px;
+  letter-spacing: 0.1rem;
+  padding: 15px;
+  position: relative;
+  text-decoration: none;
+  border-radius: 50px;
+  width: 200px;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  background-color: black;
+}
+
+#btn1::before {
+  content: "";
+  background-color: #FCD920;
+  box-shadow: 5px 5px 0 #3CB5B5,
+              10px 10px 0 #E53B51;
+  position: absolute;
+  left: 0.20rem;
+  top: 0.5rem;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.5s ease;
+  border-radius: 50px;
+  width: 233px;
+}
+
+#btn1:hover::before {
+  box-shadow: none;
+  left: 0;
+  top: 0;
+}
+#btn2 {
+  background-color: #CACBC5;
+  border: 4.8px solid rgb(82, 81, 81);
+  color: whitesmoke;
+  font-size: 26px;
+  letter-spacing: 0.1rem;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 50px;
+  width: 200px;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  background-color: pink;
+}
+
+#btn2 ::before {
+  content: "";
+  background-color: #FCD920;
+  box-shadow: 5px 5px 0 #3CB5B5,
+              10px 10px 0 #E53B51;
+  position: absolute;
+  left: 0.20rem;
+  top: 0.5rem;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.5s ease;
+  border-radius: 50px;
+  width: 233px;
+}
+
+#btn2 :hover::before {
+  box-shadow: none;
+  left: 0;
+  top: 0;
+}
+
+

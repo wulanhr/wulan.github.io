@@ -1,0 +1,35 @@
+P {
+    font-family: 'Righteous', cursive;
+}
+
+.select {
+    width: 300px;
+    height: 40px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #000;
+    border: 1px solid #09F;
+   }
+   .select:hover {
+    width: 300px;
+    height: 40px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #000;
+    border: 1px double #09F;
+    background-color: #CCC;
+   }
+
+.tombol {
+  background-color: #CACBC5;
+  border: 5px solid pink;
+  color: white;
+  font-size: 26px;
+  letter-spacing: 0.1rem;
+  padding: 15px;
+  position: relative;
+  text-decoration: none;
+  border-radius: 50px;
+  width: 200px;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  background-color: black;
+}

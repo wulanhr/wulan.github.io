@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>untuk form</title>
+    <link rel="stylesheet" href="lanjut.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="project.html">KEMBALI</a></li>
+  </ul>
+  
+    <div class="judul">
+        <h1>TEKAN TOMBOL WARNA HITAM!</h1>
+    </div>
+    <div class="btnpertama">
+    <input type="button" id="btn1" value="tekan">
+    <input type="button" id="btn2" value="click">
+  </div>
+    <script src="dist/sweetalert2.all.min.js">
+    </script>
+
+    <script>
+        // button pertama
+        const btn1 = document.getElementById('btn1');
+        btn1.addEventListener('click', function(){
+            Swal.fire({
+              title: 'HALOO IBUK ADEK YANG CANTIK, RAJIN, SUKA MENABUNG!',
+              text: '😁😍😝🤗',
+              background: '#fff url(/images/trees.png)',
+              backdrop: `
+                rgba(0,0,123,0.4)
+                url("cat.gif")
+                left top
+                no-repeat `,
+              confirmButtonColor: '#3085d6',
+              confirmButtonText: 'NEXT'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            Swal.fire(
+              ' TEKAN TOMBOL WARNA PINK',
+              '',
+              'info'
+           )
+        }
+     })
+
+    })
+        
+// button ke dua
+        const btn2 = document.getElementById('btn2');
+        btn2.addEventListener('click', function(){
+            Swal.fire({
+              title: 'ADEK KAN IDAK PERNAH MINTAK DUIT JAJAN BULANAN',
+  background: '#fff url(/images/trees.png)',
+  backdrop: `
+    rgba(0,0,123,0.4)
+    url("cat.gif")
+    left top
+    no-repeat
+  `,
+              text: 'NDAK IDAK IBUK ISIKAN ADEK SHOPEEPAY?😖😁',
+              icon:'question',
+              showCancelButton: true,
+              cancelButtonText: 'idak',
+              confirmButtonColor: '#3085d6',
+              cancelButtonColor: '#d33',
+              confirmButtonText: 'Boleh'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            Swal.fire(
+                
+              'yeeeeeeey! yuuhuuuuuuuu',
+              'MAKASIH IBU! ADEK SAYANG IBUK😁😘❤️❤️',
+           )
+        } else if (
+    /* Read more about handling dismissals below */
+          result.dismiss === Swal.DismissReason.cancel
+  ) {
+          swal.fire(
+             'cubo di pikir pikir lagi,100 ribu jadilah buk',
+             'Pliiiis :)'
+          )
+         }
+     })
+
+    })
+    </script>
+
+
+</body>
+</html>

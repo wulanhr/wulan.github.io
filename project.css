@@ -1,0 +1,70 @@
+
+ ul{
+  justify-content: space-around;
+  list-style: none;
+  height: 50px;
+  border-radius: 5px;
+}
+ ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em; 
+  font-weight: 800;
+  padding: 10px 20px;
+  background-color: #3CB5B5;
+  border-radius: 50px;
+}
+
+ ul li a:hover{
+color:rgb(255, 231, 235);
+}
+
+img {
+    width: 45%;
+}
+ p {
+    font-size: 30px;
+ }
+.tombol {
+    background: #5340ff; /* Green */
+    border: 1px solid black;
+    border-radius: 20px;
+    color: white;
+    font-size:18px;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .tombol:hover {
+    background:black;
+    color:white;
+    }
+    
+    
+    
+    
+    @media screen and (max-width: 800px) {
+      .left, .main, .right {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+
+
+    .tombolinput {
+      background: #0eb64f; /* Green */
+      border: 1px solid black;
+      border-radius: 20px;
+      color: white;
+      font-size:18px;
+      padding: 15px 32px;
+      text-align: center;
+      display: inline-block;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    .tombolinput:hover {
+      background:black;
+      color:white;
+      }
